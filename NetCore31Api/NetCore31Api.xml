@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetCore31Api</name>
+    </assembly>
+    <members>
+        <member name="T:NetCore31Api.Controllers.DevelopmentController">
+            <summary>
+            Development class
+            </summary>
+        </member>
+        <member name="M:NetCore31Api.Controllers.DevelopmentController.#ctor(Infra.Data.Auth.TokenConfigurations,Infra.Data.Auth.SigningConfigurations,Microsoft.AspNetCore.Identity.UserManager{Models.Entities.User},Microsoft.AspNetCore.Identity.RoleManager{Models.Entities.Identity.Role},Infra.Data.Interfaces.Core.IUnitOfWork,Infra.Data.Interfaces.Repositories.IApplicationCredentialRepository)">
+            <summary>
+            constructor
+            </summary>
+            <param name="tokenConfigurations"></param>
+            <param name="signingConfigurations"></param>
+            <param name="userManager"></param>
+            <param name="roleManager"></param>
+            <param name="unit"></param>
+            <param name="applicationCredentialRepository"></param>
+        </member>
+        <member name="M:NetCore31Api.Controllers.DevelopmentController.Get">
+            <summary>
+            first test method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NetCore31Api.Controllers.DevelopmentController.Post(Models.DTO.Development.SampleFile,System.Threading.CancellationToken)">
+            <summary>
+            post file test method
+            </summary>
+            <param name="file"></param>
+            <param name="ct"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetCore31Api.Controllers.DevelopmentController.GeneratesToken(Models.DTO.Development.Login,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <param name="ct"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetCore31Api.Controllers.DevelopmentController.TestAuth">
+            <summary>
+            test authentication
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NetCore31Api.Controllers.DevelopmentController.TestRole">
+            <summary>
+            test role
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NetCore31Api.Controllers.DevelopmentController.CreateUser(Models.DTO.Development.User.CreateUser,System.Threading.CancellationToken)">
+            <summary>
+            Creates a new user
+            </summary>
+            <param name="model"></param>
+            <param name="ct"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetCore31Api.Controllers.DevelopmentController.GetApplicationCredentialsList(System.Threading.CancellationToken)">
+            <summary>
+            returns a list of authorized customers with application credential access for application
+            </summary>
+            <param name="ct"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NetCore31Api.Middlewares.RestfulMiddleware">
+            <summary>
+            default middleware to intercept errors at application
+            </summary>
+        </member>
+        <member name="M:NetCore31Api.Middlewares.RestfulMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            constructor
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="T:NetCore31Api.Middlewares.RestfulMiddlewareExtensions">
+            <summary>
+            Extension method used to add the middleware to the HTTP request pipeline.
+            </summary>
+        </member>
+        <member name="M:NetCore31Api.StartupFolder.SwaggerOperationFilters.AuthorizationOperationFilter.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>
+            constructor
+            </summary>
+            <param name="operation"></param>
+            <param name="context"></param>
+        </member>
+    </members>
+</doc>
